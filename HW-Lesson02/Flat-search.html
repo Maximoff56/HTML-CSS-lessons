@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск квартиры</title>
+</head>
+<body>
+<h1>Заявка на подбор квартиры</h1>
+<form action="#" method="post" name="find-flat">
+<fieldset>
+    <legend>Расположение</legend>
+    <input type="text" name="district" placeholder="Район" autofocus required>
+    <input type="text" name="metro" placeholder="Метро" required>
+    <input type="text" name="street" placeholder="Улица, проспект">
+</fieldset>
+    <fieldset>
+        <legend>Количество комнат</legend>
+            <select id="rooms" name="rooms" multiple>
+                <option value="0">Студия</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Год постройки дома</legend>
+            <label>от:
+                <input type="number" name="build-from" min="1700" max="2030" minlength="4" maxlength="4" placeholder="1700">
+            </label>
+            <label>до:
+                <input type="number" name="build-to" min="1700" max="2030" minlength="4" maxlength="4" placeholder="2030">
+            </label>
+    </fieldset>
+    <fieldset>
+        <legend>Стоимость</legend>
+        <label>от:
+            <input type="number" name="price-from" placeholder="рублей">
+        </label>
+        <label>до:
+            <input type="number" name="price-to" placeholder="рублей">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Общая площадь</legend>
+        <label>до:
+            <input type="number" name="square-to" placeholder="1000 м2">
+        </label>
+        <div>
+        <label>Отделка:<input type="checkbox" name="finishing" value="yes-F"></label>
+        </div>
+        <div>
+        <label>Терраса:<input type="checkbox" name="terrace" value="yes-T"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Класс постройки</legend>
+        <label>
+            Эконом:
+            <input type="checkbox" name="class[]" value="Eco">
+        </label>
+        <label>
+            Бизнес:
+            <input type="checkbox" name="class[]" value="Bis">
+        </label>
+        <label>
+            Премиум:
+            <input type="checkbox" name="class[]" value="Pre">
+        </label>
+        <label>
+            Делюкс:
+            <input type="checkbox" name="class[]" value="Del">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Этаж</legend>
+        <select id="floor" name="floor" multiple>
+            <option value="not-first">Не первый</option>
+            <option value="not-last">Не последний</option>
+            <option value="last">Последний</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+    </fieldset>
+    <div>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить форму</button>
+
+    </div>
+
+
+
+</form>
+
+</body>
+</html>
