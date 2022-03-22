@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-/*ширина : marin-left +  +
-           width (border-left + padding-left + padding-right + border-right)+
-           margin-right */
 body  {
     background: url("https://kartinkin.net/uploads/posts/2021-01/1610806253_8-p-fon-chernii-karbon-12.jpg");
     background-attachment: fixed;
