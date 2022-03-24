@@ -1,0 +1,235 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*    !*marker: none !important;*!*/
+/*}*/
+/*nav {*/
+/*    background: saddlebrown;*/
+/*}*/
+/*.flex-row {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+/*.flex-column {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    width: 100%;*/
+/*}*/
+/*li {*/
+/*    width: 150px;*/
+/*    margin: auto;*/
+/*    padding: 0;*/
+/*    !*marker: none;*!*/
+/*}*/
+/*ul {*/
+/*    width: 150px;*/
+/*    !*marker: none;*!*/
+/*}*/
+/*a {*/
+/*    text-decoration: none;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*    !*marker: none;*!*/
+/*}*/
+
+/* Вариант 2 */
+* {
+    text-align: center;
+}
+.grid-right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1200px;
+}
+li:nth-child(1) {
+    grid-column: 1 / 2;
+}
+li:nth-child(2) {
+    grid-column: 2 / 3;
+}
+.grid-down {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+.grid-down li:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.grid-down li:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+li {
+    list-style-type: none;
+}
+.col1 {
+    width: 150px;
+    background: saddlebrown;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 115px;
+    margin: 0 auto;
+    border-bottom: 2px saddlebrown solid;
+}
+.col2 {
+    width: 150px;
+    background: saddlebrown;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 93px;
+    margin: 0 auto;
+    border-bottom: 2px saddlebrown solid;
+}
+.col2-0 {
+    width: 150px;
+    background: saddlebrown;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 115px;
+    margin: 0 auto;
+    border-bottom: 2px saddlebrown solid;
+}
+.col3 {
+    width: 150px;
+    background: saddlebrown;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 80px;
+    margin: 0 auto;
+    border-bottom: 2px saddlebrown solid;
+}
+.brown {
+    height: 27px;
+}
+.border-white {
+    position: relative;
+    border-bottom: 2px solid saddlebrown;
+    border-top: 2px solid rgba(1, 1, 1, 0);
+}
+#border-white:hover {
+    border-bottom: 2px white solid;
+}
+/* HW-07*/
+#col2-drop:hover {
+    opacity: 1;
+}
+#col2-drop {
+    opacity: 0;
+}
+.col2-drop {
+    position: absolute;
+    top: 41px;
+}
+#Login07:target {
+    opacity: 1;
+    z-index: 9999;
+}
+aside {
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 105, 92, .3);
+    /*opacity: .4;*/
+    top: 0;
+    z-index: -9998;
+}
+div {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background: black;
+    opacity: 1 !important;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+    height: 300px;
+    align-content: center;
+    vertical-align: center;
+}
+.aside07 {
+    /*position: relative;*/
+}
+.div07 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, -150px);
+    position: relative;
+}
+.form07 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    position: relative;
+}
+input {
+    /*margin-left: auto;*/
+    /*padding: 10px;*/
+}
+input[type=submit] {
+    padding: 10px
+}
+input[type=text],
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid white;
+    background: inherit;
+    color: white;
+    text-align: left;
+}
+input[type=text]:required {
+    border: none;
+    border-bottom: 2px solid white;
+    background: inherit;
+    color: white;
+}
+div a {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+input::-webkit-input-placeholder {
+    color: gray;
+    text-align: left;
+    text-transform: lowercase;
+}
+input::-moz-placeholder {
+    color: gray;
+    text-align: left;
+    text-transform: lowercase;
+}
+input::-ms-input-placeholder {
+    color: gray;
+    text-align: left;
+    text-transform: lowercase;
+}
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+span {
+    color: white;
+    text-align: left;
+}
+label::before {
+    content: "\2714";
+    border: 1px solid white;
+    border-radius: 2px;
+}
+#remember {
+    display: none;
+}
+#remember:checked + label::before {
+    color: green;
+}

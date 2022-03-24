@@ -127,3 +127,24 @@ div.absolute-h2 h2 {
     padding: 10px;
     background: dimgray;
 }
+.circle {
+    width: 15vw;
+    height: 15vw;
+    background: #01579B;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+aside.margin-bottom20 {
+    display: flex;
+    justify-content: space-around;
+}
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: justify;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    user-select: none;    /* чтобы юзер ничего не выделял на страничке  */
+}
